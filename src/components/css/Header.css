@@ -1,0 +1,70 @@
+@import url("../../index.css");
+@import url("./TextInfo.css");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 3rem;
+  font-size: 14px;
+  background-color: var(--color-secondary);
+  color: var(--color-third);
+}
+
+.header .title {
+  font-size: 1.3rem;
+}
+
+.header .header-list {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .add-card {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-third);
+  transition: var(--transition-default);
+}
+
+.header .add-card:hover {
+  background-color: var(--color-secondary-darker);
+}
+
+.header .add-div {
+  position: relative;
+}
+
+.header .add-card:hover + .text-info-box {
+  display: block;
+  position: absolute;
+  top: 125%;
+  right: -100%;
+  padding: 5px 30px;
+  background-color: #2f2f2fa2;
+  color: rgb(212, 212, 212);
+  font-size: 0.7rem;
+  border-radius: 25px;
+}
+
+.header .add-card:hover + .text-info-box::after {
+  content: '';
+  position: absolute;
+
+}
+
+.header li {
+  list-style-type: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-third);
+}

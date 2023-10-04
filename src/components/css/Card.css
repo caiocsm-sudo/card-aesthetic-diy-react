@@ -1,0 +1,37 @@
+/*
+  ################ 
+  No Cards Section 
+  ################
+*/ 
+
+.no-cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 5%;
+  text-align: center;
+}
+
+.no-cards-section img {
+  height: clamp(7rem, 17rem, 20rem);
+  margin: 0 0 15px 0;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 3px 5px 10px rgba(103, 103, 103, 0.292);
+}
+
+.no-cards-section h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.no-cards-section p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 2px;
+  color: rgb(77, 77, 77);
+}
+
+
